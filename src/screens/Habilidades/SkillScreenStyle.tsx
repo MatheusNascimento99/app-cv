@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-export const stylesContact = StyleSheet.create({
+export const stylesSkill = StyleSheet.create({
     container: {
         backgroundColor: "red",
     }
