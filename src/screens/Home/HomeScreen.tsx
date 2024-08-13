@@ -1,6 +1,7 @@
-import { View, Text, Pressable, Linking } from "react-native";
+import { View, Text, Pressable, Linking, Image } from "react-native";
 import { stylesFullHome } from "./HomeStyle";
 import { StatusBar } from "expo-status-bar";
+import FotoPerfil from '../../../assets/FotoPerfil.png';
 
 const HomeScreen = () => {
   const urlLinkedin =
@@ -15,20 +16,24 @@ const HomeScreen = () => {
   return (
     <View style={stylesFullHome.container}>
       <StatusBar style="auto" />
-      <View>
+      <View style={stylesFullHome.containerFotoPerfil}>
+        <Image style={stylesFullHome.fotoPerfil} source={FotoPerfil}/>
+        <Text>Matheus Nascimento</Text>
+      </View>
+      <View style={stylesFullHome.AllLinks}>
         <View style={stylesFullHome.lkd}>
           <Pressable onPress={() => openLink(urlLinkedin)}>
-            <Text>LINKEDIN</Text>
+            <Text style={stylesFullHome.Text}>LINKEDIN</Text>
           </Pressable>
         </View>
         <View style={stylesFullHome.git}>
           <Pressable onPress={() => openLink(urlGitHub)}>
-            <Text>GITHUB</Text>
+            <Text style={stylesFullHome.Text}>GITHUB</Text>
           </Pressable>
         </View>
         <View style={stylesFullHome.email}>
           <Pressable onPress={() => openLink(urlPortfolio)}>
-            <Text>PORTFÓLIO</Text>
+            <Text style={stylesFullHome.Text}>PORTFÓLIO</Text>
           </Pressable>
         </View>
       </View>
