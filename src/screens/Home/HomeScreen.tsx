@@ -18,7 +18,7 @@ const HomeScreen = () => {
       <StatusBar style="auto" />
       <View style={stylesFullHome.containerFotoPerfil}>
         <Image style={stylesFullHome.fotoPerfil} source={FotoPerfil}/>
-        <Text>Matheus Nascimento</Text>
+        <Text style={stylesFullHome.txtName}>Matheus Nascimento</Text>
       </View>
       <View style={stylesFullHome.AllLinks}>
         <View style={stylesFullHome.lkd}>

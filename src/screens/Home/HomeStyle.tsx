@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 export const stylesFullHome = StyleSheet.create({
   container: {
-    backgroundColor: "pink",
+    backgroundColor: "#dedafb",
     width: "auto",
     display: "flex",
     flex: 1,
@@ -10,11 +10,10 @@ export const stylesFullHome = StyleSheet.create({
     flexDirection: "column",
     alignContent: "center",
     justifyContent: "center",
-    borderColor: "red",
-    borderWidth: 2,
   },
   AllLinks:{
-    padding:5
+    padding:5,
+    marginTop:20,
   },
   lkd: {
     backgroundColor:'#0A66C2',
@@ -33,7 +32,7 @@ export const stylesFullHome = StyleSheet.create({
     borderRadius:8,
   },
   email: {
-    backgroundColor:"#FF5700",
+    backgroundColor:"#D91110",
     borderColor: "orange",
     borderWidth: 2,
     padding:5,
@@ -42,20 +41,22 @@ export const stylesFullHome = StyleSheet.create({
   },
   containerFotoPerfil: {
     width:300,
-    borderColor: "green",
-    borderWidth: 2,
     alignItems: "center",
     paddingBottom: 10,
   },
   fotoPerfil: {
     resizeMode: "cover",
-    width: 300,
-    height: 300,
-    borderRadius:10,
+    width: 180,
+    height: 180,
+    borderRadius:100,
+  },
+  txtName:{
+    fontWeight:"700",
+    fontSize:24
   },
   Text:{
-    fontWeight:800,
-    color:"pink",
+    fontWeight:"800",
+    color:"#dedafb",
     textAlign:"center",
   },
 });
