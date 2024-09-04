@@ -9,8 +9,8 @@ export default function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator>
-        <Tab.Screen name="CONTATO" component={Home}/>
-        <Tab.Screen name="HABILIDADES" component={Contact}/>
+        <Tab.Screen name="CONTATO" component={Contact}/>
+        <Tab.Screen name="HABILIDADES" component={Home}/>
       </Tab.Navigator>
     </NavigationContainer>
   );
